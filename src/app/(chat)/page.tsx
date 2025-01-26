@@ -39,15 +39,17 @@ export default function ChatHomePage() {
       <div className="flex-1 h-full flex flex-col">
           {!currentConversation ? (
               <motion.div
-                  className="flex-1 flex flex-col items-center justify-center gap-4"
+                  className="flex-1 flex flex-col items-center w-full px-4"
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.3 }}
               >
-                  <h1 className="text-2xl font-bold">Bem-vindo ao Chat</h1>
-                  <p className="text-muted-foreground">Inicie uma nova conversa</p>
-                  <div className="absolute bottom-6 w-full max-w-3xl">
+                  <div className="flex-1 flex flex-col items-center justify-center gap-4 text-center">
+                      <h1 className="text-2xl font-bold">Bem-vindo ao Chat</h1>
+                      <p className="text-muted-foreground">Inicie uma nova conversa</p>
+                  </div>
+                  <div className="w-full max-w-3xl">
                       <ChatWindow
                           messages={messages || []}
                           onSendMessage={handleNewChatMessage}
