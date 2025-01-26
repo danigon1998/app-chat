@@ -40,7 +40,7 @@ graph TD
 1. Clonar o repositório:
 
     ```bash
-    git clone https://github.com/seu-usuario/chat-inteligente.git
+    git clone https://github.com/danigon1998/app-chat.git
 
 2. Instalar as dependências:
 
